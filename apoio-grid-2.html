@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Bootstrap - Sistema de grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap4/css/bootstrap.min.css">
+
+    <style type="text/css">
+        .marcador {
+            background: #fe9d9d;
+            border: 1px solid red;
+        }
+
+        .marcador-container {
+            background: #5bf946;
+            border: 1px solid #36ae26;
+        }
+    </style>
+
+    <head>
+
+    <body>
+        <div class="container-fluid marcador-container">
+            <h2>Fix width</h2>
+            <div class="row" style="border: 1px solid red">
+                <div class="marcador col">Area one</div>
+                <div class="marcador col">Area two</div>
+                <div class="marcador col">Area three</div>
+                <div class="marcador col">Area four</div>
+            </div>
+
+            <h2>Atomatic width (auto-layout)</h2>
+            <div class="row" style="border: 1px solid red">
+                <div class="marcador col-6">Area one</div>
+                <div class="marcador col-4">Area two</div>
+                <div class="marcador col-2">Area three</div>
+            </div>
+            
+            <h2>Iqual piled width</h2>
+            <div class="row" style="border: 1px solid red">
+                <div class="marcador col-sm">Area one</div>
+                <div class="marcador col-sm">Area two</div>
+                <div class="marcador col-sm">Area three</div>
+            </div>
+            <br><br>
+            <div class="row" style="border: 1px solid red">
+                <div class="marcador col-lg">Area one</div>
+                <div class="marcador col-lg">Area two</div>
+                <div class="marcador col-lg">Area three</div>
+            </div>
+            <h2>Odenating</h2>
+            <div class="row" style="border: 1px solid red">
+                <div class="marcador col-md-4 order-2">Area one</div>
+                <div class="marcador col-md-4 order-1">Area two</div>
+                <div class="marcador col-md-4 order-3">Area three</div>
+            </div>  
+            
+            <h2>offset</h2>
+            <div class="row">
+                <div class="marcador col-md-6 offset-md-3">Login</div>
+            </div>
+
+            <h2>offset multiple alignment.</h2>
+            <div class="row">
+                <div class="marcador col-md-3 offset-md-3">Content one</div>
+                <div class="marcador col-md-3 offset-md-3">Content two</div>
+
+            </div>
+
+            <h2>Aninhaments</h2>
+            <div class="row">
+                <div class="col-md-6" style="border: 1px solid blue">
+                    col-md-6
+                    <div class="row">
+                        <div class="col-md-6 marcador">Content one</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</head>
